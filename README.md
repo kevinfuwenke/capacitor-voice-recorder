@@ -2,21 +2,21 @@
   <img src="https://user-images.githubusercontent.com/236501/85893648-1c92e880-b7a8-11ea-926d-95355b8175c7.png" width="128" height="128" alt="CapacitorJS Logo" />
 </p>
 <h3 align="center">Capacitor Voice Recorder</h3>
-<p align="center"><strong><code>@independo/capacitor-voice-recorder</code></strong></p>
+<p align="center"><strong><code>@kevinfuwenke/capacitor-voice-recorder</code></strong></p>
 <p align="center">Capacitor plugin for audio recording</p>
 
 <p align="center">
   <img src="https://img.shields.io/maintenance/yes/2026" alt="Maintenance Badge: until 2026" />
-  <a href="https://www.npmjs.com/package/@independo/capacitor-voice-recorder"><img src="https://img.shields.io/npm/l/@independo/capacitor-voice-recorder" alt="License Badge: MIT" /></a>
+  <a href="https://www.npmjs.com/package/@kevinfuwenke/capacitor-voice-recorder"><img src="https://img.shields.io/npm/l/@kevinfuwenke/capacitor-voice-recorder" alt="License Badge: MIT" /></a>
 <br>
-  <a href="https://www.npmjs.com/package/@independo/capacitor-voice-recorder"><img src="https://img.shields.io/npm/dw/@independo/capacitor-voice-recorder" alt="" role="presentation" /></a>
-  <a href="https://www.npmjs.com/package/@independo/capacitor-voice-recorder"><img src="https://img.shields.io/npm/v/@independo/capacitor-voice-recorder" alt="" role="presentation" /></a>
+  <a href="https://www.npmjs.com/package/@kevinfuwenke/capacitor-voice-recorder"><img src="https://img.shields.io/npm/dw/@kevinfuwenke/capacitor-voice-recorder" alt="" role="presentation" /></a>
+  <a href="https://www.npmjs.com/package/@kevinfuwenke/capacitor-voice-recorder"><img src="https://img.shields.io/npm/v/@kevinfuwenke/capacitor-voice-recorder" alt="" role="presentation" /></a>
   <a href="https://codecov.io/gh/kevinfuwenke/capacitor-voice-recorder/branch/master"><img src="https://codecov.io/gh/kevinfuwenke/capacitor-voice-recorder/branch/master/graph/badge.svg" alt="Coverage Badge: master" /></a>
 </p>
 
 ## Overview
 
-The `@independo/capacitor-voice-recorder` plugin allows you to record audio on Android, iOS, and Web platforms.
+The `@kevinfuwenke/capacitor-voice-recorder` plugin allows you to record audio on Android, iOS, and Web platforms.
 
 ## Installation
 
@@ -74,7 +74,7 @@ This plugin supports both CocoaPods and Swift Package Manager (SPM) on iOS.
 Minimal flow for starting and stopping a recording:
 
 ```typescript
-import {VoiceRecorder} from '@independo/capacitor-voice-recorder';
+import {VoiceRecorder} from '@kevinfuwenke/capacitor-voice-recorder';
 
 export const startRecording = async () => {
     const permission = await VoiceRecorder.requestAudioRecordingPermission();
@@ -435,7 +435,7 @@ When a `uri` is present, `recordDataBase64` may be empty or omitted, so prefer `
 
 ```typescript
 import {Directory} from '@capacitor/filesystem';
-import {VoiceRecorder} from '@independo/capacitor-voice-recorder';
+import {VoiceRecorder} from '@kevinfuwenke/capacitor-voice-recorder';
 
 await VoiceRecorder.startRecording({
     directory: Directory.Cache,
@@ -503,4 +503,4 @@ This project started as a fork of [
 Thanks to Avihu Harush for the original implementation and community groundwork. Since then, the plugin has been
 re-architected for improved performance, reliability, and testability (service/adapters split, contract tests, and a
 normalized response path). The codebase now diverges substantially, which is why this repo left the fork network.
-This plugin is maintained by [Independo GmbH](https://www.independo.app/).
+This plugin is maintained by [kevinfuwenke GmbH](https://www.kevinfuwenke.app/).

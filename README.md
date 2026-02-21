@@ -11,7 +11,7 @@
 <br>
   <a href="https://www.npmjs.com/package/@independo/capacitor-voice-recorder"><img src="https://img.shields.io/npm/dw/@independo/capacitor-voice-recorder" alt="" role="presentation" /></a>
   <a href="https://www.npmjs.com/package/@independo/capacitor-voice-recorder"><img src="https://img.shields.io/npm/v/@independo/capacitor-voice-recorder" alt="" role="presentation" /></a>
-  <a href="https://codecov.io/gh/independo-gmbh/capacitor-voice-recorder/branch/master"><img src="https://codecov.io/gh/independo-gmbh/capacitor-voice-recorder/branch/master/graph/badge.svg" alt="Coverage Badge: master" /></a>
+  <a href="https://codecov.io/gh/kevinfuwenke/capacitor-voice-recorder/branch/master"><img src="https://codecov.io/gh/kevinfuwenke/capacitor-voice-recorder/branch/master/graph/badge.svg" alt="Coverage Badge: master" /></a>
 </p>
 
 ## Overview
@@ -21,7 +21,7 @@ The `@independo/capacitor-voice-recorder` plugin allows you to record audio on A
 ## Installation
 
 ```
-npm install --save @independo/capacitor-voice-recorder
+npm install --save @kevinfuwenke/capacitor-voice-recorder
 npx cap sync
 ```
 
@@ -374,7 +374,9 @@ Event payload for voiceRecordingInterrupted event (empty - no data).
 
 Construct a type with a set of properties K of type T
 
-<code>{ [P in K]: T; }</code>
+<code>{
+ [P in K]: T;
+ }</code>
 
 
 #### VoiceRecordingInterruptionEndedEvent
